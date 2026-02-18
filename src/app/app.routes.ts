@@ -9,3 +9,4 @@ export const routes: Routes = [
 	{ path: 'stats', component: StatsComponent },
 	{ path: '**', redirectTo: '' }
 ];
+//
