@@ -20,9 +20,12 @@
 
 					<ul>
 						<li *ngFor="let goal of section.goals" [class.done]="goal.completed">
-							<span class="checkbox" aria-hidden="true" [class.checked]="goal.completed">
-								{{ goal.completed ? '✓' : '' }}
-							</span>
+							<mat-checkbox
+								class="goal-checkbox"
+								[checked]="goal.completed"
+								[disableRipple]="true"
+								aria-label="Cél teljesítve"
+							></mat-checkbox>
 							<span class="goal-text">{{ goal.title }}</span>
 						</li>
 					</ul>
@@ -31,11 +34,11 @@
 		</section>
 	</div>
 
-	<section class="notes-block" aria-label="Fejlesztési megjegyzések">
+	<!-- <section class="notes-block" aria-label="Fejlesztési megjegyzések">
 		<h2>Fejlesztési napló</h2>
 		<textarea
 			rows="8"
 			placeholder="Ide írhatod manuálisan, hogy hol milyen fejlesztéseket teljesítettek..."
 		></textarea>
-	</section>
+	</section> -->
 </section>

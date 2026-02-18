@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { STAT_GROUPS, StatGroup } from './stats-data';
 
 @Component({
   selector: 'app-stats',
-  imports: [NgFor],
+  imports: [NgFor, MatCheckboxModule],
   templateUrl: './stats.component.html',
   styleUrl: './stats.component.scss'
 })

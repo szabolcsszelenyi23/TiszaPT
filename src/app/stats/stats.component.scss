@@ -106,32 +106,15 @@ h1 {
 
 .subsection li {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	gap: 0.65rem;
 	line-height: 1.45;
 }
 
-.checkbox {
-	width: 18px;
-	height: 18px;
-	border: 1px solid rgba(8, 12, 33, 0.35);
-	border-radius: 4px;
-	flex: 0 0 18px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 0.78rem;
-	font-weight: 700;
-	line-height: 1;
-	color: transparent;
-	user-select: none;
+.goal-checkbox {
+	margin-top: 0;
+	flex: 0 0 auto;
 	pointer-events: none;
-}
-
-.checkbox.checked {
-	border-color: #21a35b;
-	background: #21a35b;
-	color: #ffffff;
 }
 
 .goal-text {
